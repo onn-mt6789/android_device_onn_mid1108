@@ -8,14 +8,46 @@ from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
+from extract_utils.fixups_blob import (
+    blob_fixups_user_type,
+    blob_fixup
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
 
 namespace_imports = [
     'vendor/onn/mt8781-common',
 ]
 
+def fixup_ndk_platform(libname: str) -> tuple[str, str]:
+    """
+    Replace -ndk_platform with -ndk
+    """
+    return (libname, libname.replace("-ndk_platform.so", "-ndk.so"))
+
+patchelf_version = "0_17_2"
+
+blob_fixups: blob_fixups_user_type = {
+    "vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod": blob_fixup()
+    .patchelf_version(patchelf_version)
+    .replace_needed(
+        "android.hardware.security.keymint-V1-ndk_platform.so",
+        "android.hardware.security.keymint-V3-ndk.so",
+    )
+    .replace_needed(
+        *fixup_ndk_platform("android.hardware.security.secureclock-V1-ndk_platform.so")
+    )
+    .replace_needed(
+        *fixup_ndk_platform("android.hardware.security.sharedsecret-V1-ndk_platform.so")
+    ),
+}  # fmt: skip
+
 module = ExtractUtilsModule(
     'mid1108',
     'onn',
+    blob_fixups=blob_fixups,
     namespace_imports=namespace_imports,
     #add_firmware_proprietary_file=True,
 )
