@@ -33,5 +33,9 @@ BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/modules/vendor_dlkm/*.k
 # Workaround to make lineage's soong generator work
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.emmc
+TARGET_SCREEN_DENSITY := 240
+
 # Inherit from the proprietary version
 include vendor/onn/mid1108/BoardConfigVendor.mk
