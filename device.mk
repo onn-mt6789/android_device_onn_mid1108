@@ -32,5 +32,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH)
 
+# Shipping API Level
+PRODUCT_SHIPPING_API_LEVEL := 33
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/onn/mid1108/mid1108-vendor.mk)
