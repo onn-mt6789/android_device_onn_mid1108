@@ -177,6 +177,10 @@ vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
 vendor/firmware/WMT_SOC.cfg
 
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.beanpod.so
+vendor/lib64/hw/libSoftGatekeeper.so
+
 # Keymaster
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
