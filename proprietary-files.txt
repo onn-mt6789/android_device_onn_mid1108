@@ -177,6 +177,26 @@ vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
 vendor/firmware/WMT_SOC.cfg
 
+# Keymaster
+vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
+vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
+vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
+vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
+
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod
+vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service.beanpod.xml
+vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.beanpod.xml
+vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.beanpod.xml
+
+# KMSetkey
+vendor/bin/bp_kmsetkey_ca
+vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
+vendor/lib64/hw/kmsetkey.beanpod.so
+vendor/lib64/libkmsetkey.so
+
 # TEE
 vendor/bin/teei_daemon
 vendor/etc/init/microtrust.rc
