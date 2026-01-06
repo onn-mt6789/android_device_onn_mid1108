@@ -124,5 +124,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 TARGET_COPY_OUT_ODM_DLKM := odm_dlkm
 
+# Android Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS := --flags 3
+
 # Inherit the proprietary version
 include vendor/onn/mid1108/BoardConfigVendor.mk
