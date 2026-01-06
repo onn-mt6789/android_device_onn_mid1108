@@ -25,5 +25,8 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
 
+# Force any prefer32 targets to be compiled as 64 bit.
+IGNORE_PREFER32_ON_DEVICE := true
+
 # Inherit the proprietary version
 include vendor/onn/mid1108/BoardConfigVendor.mk
