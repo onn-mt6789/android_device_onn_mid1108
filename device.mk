@@ -7,3 +7,6 @@
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Inherit our proprietary vendor
+$(call inherit-product, vendor/onn/mid1108/mid1108-vendor.mk)

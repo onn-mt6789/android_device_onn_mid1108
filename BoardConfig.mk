@@ -5,3 +5,6 @@
 #
 
 DEVICE_PATH := device/onn/mid1108
+
+# Inherit the proprietary version
+include vendor/onn/mid1108/BoardConfigVendor.mk
