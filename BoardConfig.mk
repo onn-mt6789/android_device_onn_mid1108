@@ -6,6 +6,7 @@
 
 DEVICE_PATH := device/onn/mid1108
 KERNEL_PATH := device/onn/mid1108-kernel
+CONFIGS_PATH := $(DEVICE_PATH)/configs
 
 # Architecture
 TARGET_ARCH := arm64
@@ -136,6 +137,10 @@ TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_SCREEN_DENSITY := 240
 TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
+
+# Properties
+TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
+TARGET_VENDOR_PROP += $(CONFIGS_PATH)/props/vendor.prop
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
