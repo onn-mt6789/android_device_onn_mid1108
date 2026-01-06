@@ -28,5 +28,16 @@ ZYGOTE_FORCE_64 := true
 # Force any prefer32 targets to be compiled as 64 bit.
 IGNORE_PREFER32_ON_DEVICE := true
 
+# OTA Updates
+TARGET_OTA_ASSERT_DEVICE := mid1108
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := mid1108_ms_64 # TODO: Double check
+TARGET_NO_BOOTLOADER := true
+
+# Plaform
+BOARD_HAS_MTK_HARDWARE := true
+TARGET_BOARD_PLATFORM := mt6789
+
 # Inherit the proprietary version
 include vendor/onn/mid1108/BoardConfigVendor.mk
