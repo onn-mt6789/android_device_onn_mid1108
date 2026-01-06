@@ -49,7 +49,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 
 # Init scripts
 PRODUCT_PACKAGES += \
-    init.recovery.usb.rc \
+    init.insmod.sh \
+    init.insmod.mt6789.cfg \
+    init.cgroup.rc \
+    init_connectivity.rc \
+    init.connectivity.rc \
+    init.mt6789.rc \
+    init.mt8781.rc \
+    init.mt6789.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    ueventd.mt6789.rc \
     init.recovery.usb.rc \
     fstab.mt6789 \
     fstab.mt8781 \
