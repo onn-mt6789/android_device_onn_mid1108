@@ -64,6 +64,10 @@ PRODUCT_PACKAGES += \
     com.android.hardware.boot \
     android.hardware.boot-service.default_recovery
 
+# FastbootD
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Permissions (features)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/permissions/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
