@@ -17,5 +17,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Shipping API Level
+PRODUCT_SHIPPING_API_LEVEL := 33
+
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/onn/mid1108/mid1108-vendor.mk)
