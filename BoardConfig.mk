@@ -75,7 +75,9 @@ PRODUCT_COPY_FILES += \
 
 # DTB
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
-BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb.img
+LOCAL_DTB := $(KERNEL_PATH)/dtb.img
+PRODUCT_COPY_FILES += \
+    $(LOCAL_DTB):dtb.img
 
 # Kernel modules
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules.load.vendor_ramdisk))
