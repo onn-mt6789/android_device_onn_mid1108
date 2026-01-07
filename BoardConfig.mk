@@ -6,6 +6,8 @@
 # Inherit from mt8781-common
 include device/onn/mt8781-common/BoardConfigCommon.mk
 
+CONFIGS_PATH := $(DEVICE_PATH)/configs
+
 # Boot image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
@@ -41,6 +43,8 @@ TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.emmc
 TARGET_SCREEN_DENSITY := 240
 TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
+
+DEVICE_MANIFEST_FILE += $(CONFIGS_PATH)/vintf/manifest.xml
 
 # Inherit from the proprietary version
 include vendor/onn/mid1108/BoardConfigVendor.mk
