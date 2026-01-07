@@ -182,6 +182,43 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 # Display configs
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 
+# Firmware
+vendor/firmware/BT_FW.cfg
+vendor/firmware/fm_cust.cfg
+vendor/firmware/Himax_firmware_HJR110018D.bin
+vendor/firmware/HJR110018D_HJR_D00_C06_20230109_051320.bin
+vendor/firmware/HJR110018D_HJR_D00_C0C_20230718_043210.bin
+vendor/firmware/HJR110018D_HJR_D00_C0D_20230919_035113.bin
+vendor/firmware/HJR110018D_HJR_D00_CA0_20230309_053315.bin
+vendor/firmware/HJR110018D_HJR_D00_CA4_20230310_035540.bin
+vendor/firmware/lib3a.ccu
+vendor/firmware/mt6627_fm_v1_coeff.bin
+vendor/firmware/mt6627_fm_v1_patch.bin
+vendor/firmware/mt6630_fm_v1_coeff.bin
+vendor/firmware/mt6630_fm_v1_patch.bin
+vendor/firmware/mt6630_fm_v2_coeff.bin
+vendor/firmware/mt6630_fm_v2_coeff_tx.bin
+vendor/firmware/mt6630_fm_v2_patch.bin
+vendor/firmware/mt6630_fm_v2_patch_tx.bin
+vendor/firmware/mt6631_fm_v1_coeff.bin
+vendor/firmware/mt6631_fm_v1_patch.bin
+vendor/firmware/mt6632_fm_v1_coeff.bin
+vendor/firmware/mt6632_fm_v1_patch.bin
+vendor/firmware/mt6635_fm_v1_coeff.bin
+vendor/firmware/mt6635_fm_v1_patch.bin
+vendor/firmware/remoteproc_scp
+vendor/firmware/soc2_2_ram_bt_1d_1_hdr.bin
+vendor/firmware/soc2_2_ram_bt_1e_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_1d_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_1e_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_1d_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_1e_1_hdr.bin
+vendor/firmware/soc_fm_v1_coeff.bin
+vendor/firmware/soc_fm_v1_patch.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
+vendor/firmware/WMT_SOC.cfg
+
 # Graphics
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
