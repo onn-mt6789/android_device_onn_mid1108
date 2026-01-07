@@ -734,8 +734,20 @@ vendor/thh/ta/c1882f2d885e4e13a8c8e2622461b2fa.ta
 vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
 vendor/thh/ta/isee_model.json
 
-
-
+# Thermal
+vendor/bin/thermal_core
+vendor/bin/thermal_intf
+vendor/etc/init/init.thermal_core.rc
+vendor/etc/thermal/disable_skin_control.conf
+vendor/etc/thermal/disable_thermal.conf
+vendor/etc/thermal/disable_thermal_temp.conf
+vendor/etc/thermal/disable_throttling.conf
+vendor/etc/thermal/thermal.conf
+vendor/etc/thermal/thermal_mtbf.conf
+vendor/etc/thermal/thermal_policy_00.conf
+vendor/etc/thermal/thermal_policy_02.conf
+vendor/etc/thermal/thermal_policy_08.conf
+vendor/lib64/hw/thermal_hal.so
 
 # Wi-Fi
 vendor/bin/conninfra_loader
