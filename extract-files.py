@@ -28,6 +28,8 @@ from extract_utils.utils import (
 
 namespace_imports = [
     'device/onn/mid1108',
+    "hardware/mediatek",
+    "hardware/mediatek/libmtkperf_client"
 ]
 
 
