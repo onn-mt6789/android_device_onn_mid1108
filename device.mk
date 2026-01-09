@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
 # MediaCas
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
