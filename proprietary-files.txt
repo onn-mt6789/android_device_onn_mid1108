@@ -735,13 +735,22 @@ vendor/bin/teei_daemon
 vendor/etc/init/microtrust.rc
 vendor/lib/libgz_gp_client.so
 vendor/lib/libgz_uree.so
-vendor/lib/libthha.so
+vendor/lib/libthha.so;DISABLE_CHECKELF
 vendor/lib64/libTEECommon.so
 vendor/lib64/libgz_gp_client.so
 vendor/lib64/libgz_uree.so
 vendor/lib64/libimsg_log.so
 vendor/lib64/libteei_daemon_vfs.so
-vendor/lib64/libthha.so
+vendor/lib64/libthha.so;DISABLE_CHECKELF
+vendor/lib64/vendor.microtrust.hardware.thh@2.0.so
+vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
+vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
+vendor/etc/init/microtrust.init_thh.rc
+vendor/etc/init/microtrust.rc
+vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc
+vendor/etc/vintf/manifest/manifest_thh.xml
+vendor/lib64/libthhclient.so
+vendor/bin/init_thh
 
 # TEE (TAs)
 vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta
