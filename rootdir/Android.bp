@@ -45,6 +45,12 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.insmod.mt8781.cfg",
+    src: "etc/init.insmod.mt6789.cfg",
+    vendor: true
+}
+
+prebuilt_etc {
     name: "init.cgroup.rc",
     src: "etc/init/hw/init.cgroup.rc",
     sub_dir: "init/hw",
