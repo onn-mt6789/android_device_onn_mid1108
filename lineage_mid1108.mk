@@ -21,3 +21,10 @@ PRODUCT_BRAND := onn
 PRODUCT_MODEL := 11 Tablet Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-digiland
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="sys_mssi_mid1108_ms_64-user 14 UP1A.231005.007 mp1V814 release-keys" \
+    BuildFingerprint=onn/100110027/mid1108_ms_64:14/UP1A.231005.007/qyh20241207:user/release-keys \
+    DeviceName=mid1108_ms_64 \
+	ProductModel=100110027 \
+    DeviceProduct=100110027 
