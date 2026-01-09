@@ -161,4 +161,10 @@
         <item>"/system/bin/surfaceflinger"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
     </string-array>
+
+    <!-- Enable doze mode -->
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
+    <!-- Screen brightness when dozing. -->
+    <integer name="config_screenBrightnessDoze">5</integer>
 </resources>
