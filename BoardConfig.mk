@@ -40,6 +40,7 @@ TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.emmc
 TARGET_SCREEN_DENSITY := 240
+TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
 
 # Inherit from the proprietary version
 include vendor/onn/mid1108/BoardConfigVendor.mk
