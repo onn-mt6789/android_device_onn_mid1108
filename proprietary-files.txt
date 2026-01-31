@@ -467,19 +467,6 @@ vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 vendor/lib64/hw/kmsetkey.beanpod.so
 vendor/lib64/libkmsetkey.so
 
-# TEE
-vendor/bin/teei_daemon
-vendor/etc/init/microtrust.rc
-vendor/lib/libgz_gp_client.so
-vendor/lib/libgz_uree.so
-vendor/lib/libthha.so
-vendor/lib64/libTEECommon.so
-vendor/lib64/libgz_gp_client.so
-vendor/lib64/libgz_uree.so
-vendor/lib64/libimsg_log.so
-vendor/lib64/libteei_daemon_vfs.so
-vendor/lib64/libthha.so
-
 # TEE (TAs)
 vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta
 vendor/thh/ta/c09c9c5daa504b78b0e46eda61556c3a.ta
