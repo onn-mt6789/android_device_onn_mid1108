@@ -19,15 +19,6 @@ PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_COPY_FILES += \
 	$(KERNEL_PATH)/Image.gz:kernel
 
-# Audio
-$(call soong_config_set,android_hardware_audio,run_64bit,true)
-PRODUCT_PACKAGES += \
-    android.hardware.audio.service \
-    android.hardware.audio@7.0-impl:64 \
-    android.hardware.audio.effect@7.0-impl:64 \
-    audio.bluetooth.default:64 \
-    audio.usb.default:64
-
 # Audio Configuration
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
