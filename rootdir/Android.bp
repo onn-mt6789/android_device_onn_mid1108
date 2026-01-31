@@ -2,3 +2,10 @@
 // Copyright (C) The LineageOS Project
 // SPDX-License-Identifier: Apache-2.0
 //
+
+prebuilt_etc {
+    name: "fstab.emmc",
+    src: "etc/fstab.emmc",
+    vendor: true,
+    vendor_ramdisk_available: true
+}

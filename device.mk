@@ -13,6 +13,11 @@ $(call inherit-product, device/onn/mt8781-common/common.mk)
 PRODUCT_COPY_FILES += \
 	$(KERNEL_PATH)/Image.gz:kernel
 
+# Init scripts
+PRODUCT_PACKAGES += \
+    fstab.emmc \
+    fstab.emmc.vendor_ramdisk
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH)
