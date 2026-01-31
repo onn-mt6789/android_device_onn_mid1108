@@ -19,6 +19,10 @@ PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_COPY_FILES += \
 	$(KERNEL_PATH)/Image.gz:kernel
 
+# Permissions (features)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
+
 # Init scripts
 PRODUCT_PACKAGES += \
     fstab.emmc \
