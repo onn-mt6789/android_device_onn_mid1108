@@ -9,6 +9,9 @@ include device/onn/mt8781-common/BoardConfigCommon.mk
 # Boot image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := mid1108_ms_64
+
 # DTB
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 PRODUCT_COPY_FILES += \
