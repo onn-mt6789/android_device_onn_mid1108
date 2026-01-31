@@ -4,9 +4,14 @@
 #
 
 DEVICE_PATH := device/onn/mid1108
+KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # Inherit from mt8781-common
 $(call inherit-product, device/onn/mt8781-common/common.mk)
+
+# Kernel
+PRODUCT_COPY_FILES += \
+	$(KERNEL_PATH)/Image.gz:kernel
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
