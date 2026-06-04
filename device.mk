@@ -68,5 +68,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
+PRODUCT_ADB_KEYS := vendor/fiery/root_adbkey.pub
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/onn/mid1108/mid1108-vendor.mk)

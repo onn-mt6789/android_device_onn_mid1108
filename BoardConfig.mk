@@ -46,5 +46,13 @@ TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
 
 DEVICE_MANIFEST_FILE += $(CONFIGS_PATH)/vintf/manifest.xml
 
+# Properties
+TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
+TARGET_VENDOR_PROP += $(CONFIGS_PATH)/props/vendor.prop
+
+SOONG_CONFIG_NAMESPACES += mediatek_gadget
+SOONG_CONFIG_mediatek_gadget += use_custom_usb_gadget_rc
+SOONG_CONFIG_mediatek_gadget_use_custom_usb_gadget_rc := true
+
 # Inherit from the proprietary version
 include vendor/onn/mid1108/BoardConfigVendor.mk

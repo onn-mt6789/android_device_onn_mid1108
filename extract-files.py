@@ -54,6 +54,21 @@ blob_fixups: blob_fixups_user_type = {
     .replace_needed(
         *fixup_ndk_platform("android.hardware.security.sharedsecret-V1-ndk_platform.so")
     ),
+    (
+        "vendor/lib64/libteei_daemon_vfs.so",
+        "vendor/lib64/mt6789/lib3a.flash.so",
+        "vendor/lib64/mt6789/lib3a.ae.stat.so",
+        "vendor/lib64/mt6789/lib3a.sensors.color.so",
+        "vendor/lib64/mt6789/lib3a.sensors.flicker.so",
+    ): blob_fixup()
+    .patchelf_version(patchelf_version)
+    .add_needed("liblog.so"),
+            (
+        "vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so",
+        "vendor/lib64/mt6789/libaalservice.so",
+        "vendor/lib64/mt6789/libcam.utils.sensorprovider.so",
+    ): blob_fixup()
+    .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
